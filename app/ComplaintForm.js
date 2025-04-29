@@ -57,7 +57,7 @@ function ComplaintForm() {
           <div className="fixed left-1/2 transform -translate-x-1/2 z-50 w-[380px] max-w-md bg-white text-black shadow-lg rounded-sm px-4 py-2 border border-gray-300">
            
            <div className='flex '>
-             <p className="text-sm mt-2">
+             <p className="text-md mt-2">
               We have lodged your complaint successfully.
               Please note your CURN (Complaint Unique Reference Number) is <strong>{curn}</strong>.
             </p>
@@ -70,7 +70,7 @@ function ComplaintForm() {
            </div>
            
            
-            <p className="text-sm mt-2">
+            <p className="text-md mt-2">
               Please be informed that transaction details provided by you are incorrect/not matching.
               Please check the TXN details and try again after 24 hours.
             </p>
