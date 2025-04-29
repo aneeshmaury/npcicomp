@@ -54,7 +54,7 @@ function ComplaintForm() {
       {showPopup && (
         <>
           <div className="fixed inset-0 bg-black opacity-50 z-40"></div>
-          <div className="fixed left-1/2 transform -translate-x-1/2 z-50 w-[370px] max-w-md bg-white text-black shadow-lg rounded-sm px-4 py-2 border border-gray-300">
+          <div className="fixed left-1/2 transform -translate-x-1/2 z-50 w-[380px] max-w-md bg-white text-black shadow-lg rounded-sm px-4 py-2 border border-gray-300">
            
            <div className='flex '>
              <p className="text-sm mt-2">
