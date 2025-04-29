@@ -33,23 +33,23 @@ function ComplaintForm() {
     <div className="max-w-4xl mx-auto p-3 bg-white shadow-lg rounded-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-6">Complaint</h2>
 
-<div className=' px-3 shadow-lg rounded-sm bg-white' style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+<div className='px-3 shadow-lg rounded-sm bg-white' style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
 
 
 
 
-      <div className="flex justify-between items-center">
-        <h3 className="text-md font- text-gray-700">Transaction</h3>
+      <div className=" flex justify-between items-center">
+        <h3 className="text-md mt-2 text-gray-700">Transaction</h3>
         <div className="cursor-pointer ">
         <FaMinus />
         </div>
       </div>
 
-      <form className="space-y-6 mt-6" onSubmit={handleSubmit}>
+      <form className="space-y-6 mt-2" onSubmit={handleSubmit}>
         <div className="flex flex-wrap gap-6">
           <div className="w-full md:w-1/2">
-            <label className="block text-xs tracking-wider
-  font- text-purple-900 mb-2">Nature of transaction</label>
+            <label className="block text-sm tracking-wider
+  font- text-purple-900 ">Nature of transaction</label>
             <select
               name="natureOfTransaction"
               value={formData.natureOfTransaction}
@@ -63,7 +63,8 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full md:w-1/2">
-            <label className="block text-sm font text-blue-500 mb-2">Issue</label>
+            <label className="block text-sm tracking-wider
+  font- text-purple-900">Issue</label>
             <select
               name="issueType"
               value={formData.issueType}
@@ -78,7 +79,8 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block text-sm text-blue-500">Comments</label>
+          <label className="block text-sm tracking-wider
+  font- text-purple-900">Comments</label>
           <textarea
             name="comments"
             rows="2"
@@ -91,7 +93,8 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block text-sm  text-blue-500 ">Bank Name</label>
+          <label className="block text-sm tracking-wider
+  font- text-purple-900">Bank Name</label>
           <select
             name="bankName"
             required
@@ -108,7 +111,8 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block text-sm font text-blue-500 ">Transaction ID</label>
+          <label className="block text-sm tracking-wider
+  font- text-purple-900 ">Transaction ID</label>
           <input
             type="text"
             name="transactionId"
@@ -121,7 +125,8 @@ function ComplaintForm() {
 
         <div className="flex gap-6">
           <div className="w-full md:w-1/2">
-            <label className="block text-sm  text-blue-500 ">Rupees</label>
+            <label className="block text-sm tracking-wider
+  font- text-purple-900">Rupees</label>
             <input
               type="number"
               name="rupees"
@@ -133,7 +138,8 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full md:w-1/2">
-            <label className="block text-sm text-blue-500">Paisa</label>
+            <label className="block text-sm tracking-wider
+  font- text-purple-900">Paisa</label>
             <input
               type="number"
               name="paisa"
@@ -146,7 +152,8 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block text-sm  text-blue-500 ">Date of Transaction</label>
+          <label className="block text-sm tracking-wider
+  font- text-purple-900">Date of Transaction</label>
           <input
             type="date"
             name="transactionDate"
@@ -158,7 +165,8 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block text-sm text-blue-500 ">Email ID</label>
+          <label className="block text-sm tracking-wider
+  font- text-purple-900 ">Email ID</label>
           <input
             type="email"
             name="email"
