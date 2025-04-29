@@ -44,7 +44,7 @@ function ComplaintForm() {
     setCurn(newCURN);
 
     setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 2000);
+    setTimeout(() => setShowPopup(false), 3000);
   };
 
   return (
