@@ -86,9 +86,9 @@ function ComplaintForm() {
 
 
 
-      <h2 className="text-2xl font-semibold text-gray-800 px-2 mb-6 mt-19">Complaint</h2>
+      <h2 className="text-2xl font-semibold text-gray-800 px-2 mb-6 mt-16">Complaint</h2>
 
-<div className='px-3 shadow-lg rounded-sm bg-white' style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+<div className='px-3 mx-2 shadow-lg rounded-sm bg-white' style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
 
 
 
