@@ -169,21 +169,30 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full">
-            <label className="block text-sm tracking-wider text-[#27357E]">Bank Name</label>
-            <select
-              name="bankName"
-              required
-              value={formData.bankName}
-              onChange={handleChange}
-              className="w-full border-b border-gray-300"
-            >
-              <option>--Select Bank Name--</option>
-              <option>State Bank of India</option>
-              <option>HDFC Bank</option>
-              <option>ICICI Bank</option>
-            </select>
-            <small className="text-xs italic text-gray-500">Please select your bank</small>
-          </div>
+  <label className="block text-sm tracking-wider text-[#27357E]">Bank Name</label>
+
+  <div className="relative">
+    <select
+      name="bankName"
+      required
+      value={formData.bankName}
+      onChange={handleChange}
+      className="w-full border-b border-gray-300 appearance-none pr-8"
+    >
+      <option>--Select Bank Name--</option>
+      <option>State Bank of India</option>
+      <option>HDFC Bank</option>
+      <option>ICICI Bank</option>
+    </select>
+
+    {/* Bold Dropdown Icon */}
+    <MdOutlineKeyboardArrowDown
+      className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-700 text-xl font-bold pointer-events-none"
+    />
+  </div>
+
+  <small className="text-xs italic text-gray-500">Please select your bank</small>
+</div>
 
           <div className="flex gap-6">
             <div className="w-full md:w-1/2">
