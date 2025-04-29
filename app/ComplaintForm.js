@@ -35,26 +35,7 @@ function ComplaintForm() {
 
   return (
      <div>
-   <div className="px-4 py-3 flex justify-between items-center gap-x-4">
-  {/* Left Icon */}
-  <div>
-    <img
-      src="https://cdn-icons-png.flaticon.com/128/2438/2438078.png"
-      alt="NCL Logo"
-      className="h-4 object-contain"
-    />
-  </div>
-
-  {/* Center Text */}
-  <div className="flex-1 text-center tracking-wider text-md whitespace-nowrap overflow-hidden text-ellipsis">
-    Dispute Redressal Mechanis | NPCI - National Payment Corporation 
-  </div>
-
-  {/* Right Icon */}
-  <div>
-    <GrRefresh />
-  </div>
-</div>
+  
 
 <div className="w-full bg-[#1e1e1e] text-white text-xs px-4 py-1 flex gap-3 justify-end items-center">
   <span>Skip to main content</span>
