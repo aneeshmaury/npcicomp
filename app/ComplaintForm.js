@@ -146,7 +146,7 @@ function ComplaintForm() {
             <label className="block text-sm tracking-wider text-[#27357E]">Comments</label>
             <textarea
               name="comments"
-              rows="1"
+              rows="2"
               maxLength="500"
               placeholder=""
               value={formData.comments}
