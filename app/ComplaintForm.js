@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { FaMinus } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { BiMenuAltLeft } from "react-icons/bi";
+import { FaSearch } from "react-icons/fa";
 
 
 function ComplaintForm() {
@@ -32,8 +34,59 @@ function ComplaintForm() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-3 bg-white shadow-lg rounded-lg">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-6">Complaint</h2>
+     <div>
+<div className="w-full bg-[#1e1e1e] text-white text-xs px-4 py-1 flex gap-3 justify-end items-center">
+  <span>Skip to main content</span>
+  <div className="space-x-2">
+    <button className="hover:underline">A+</button>
+    <button className="hover:underline">A-</button>
+    <button className="hover:underline">A</button>
+  </div>
+</div>
+
+{/* Logo and menu bar */}
+<div className="relative bg-[#707070] py-4 px-6 ">
+  {/* Background Text - behind everything */}
+  <p className="absolute inset-0 z-0 text-black px-6  pointer-events-none">
+  <ul class="list-disc">
+  <li>The end-user customer shall be kept communicated by the PSP / TPAP by means of updating the status of such end-user customer’s complaint on the relevant app itself</li>
+  
+</ul>
+  </p>
+
+  {/* Foreground Content - z-10 ensures it stays on top */}
+  <div className="relative z-10 flex justify-between items-center gap-4">
+    {/* Left Icon */}
+    <div className="text-3xl text-white">
+      <BiMenuAltLeft />
+    </div>
+
+    {/* Logos */}
+    <div className="flex items-center ml-[-100px] gap-2">
+      <img
+        src="https://www.npci.org.in/images/npci/new-logo1.png"
+        alt="NCL Logo"
+        className="h-8 object-contain"
+      />
+      <img
+        src="https://www.npci.org.in/images/npci/har-payment-digital-logo.png"
+        alt="Har Payment Logo"
+        className="h-8 object-contain"
+      />
+    </div>
+
+    {/* Right Icon */}
+    <div className="text-white text-xl">
+      <FaSearch />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      <h2 className="text-2xl font-semibold text-gray-800 px-2 mb-6 mt-19">Complaint</h2>
 
 <div className='px-3 shadow-lg rounded-sm bg-white' style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
 
@@ -201,6 +254,7 @@ function ComplaintForm() {
 </div>
 
     </div>
+    
   );
 }
 
