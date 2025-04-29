@@ -84,7 +84,7 @@ function ComplaintForm() {
         <div className="space-x-2">
           <button className="hover:underline">A+</button>
           <button className="hover:underline">A-</button>
-          <button className="hover:underline">A</button>
+          <button className="hover:underline text-md">A</button>
         </div>
       </div>
 
