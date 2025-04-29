@@ -43,12 +43,12 @@ function ComplaintForm() {
       <form className="space-y-6 mt-6" onSubmit={handleSubmit}>
         <div className="flex flex-wrap gap-6">
           <div className="w-full md:w-1/2">
-            <label className="block text-sm  text-blue-500 mb-2">Nature of transaction</label>
+            <label className="block text-sm font-thin  text-violet-900 mb-2">Nature of transaction</label>
             <select
               name="natureOfTransaction"
               value={formData.natureOfTransaction}
               onChange={handleChange}
-              className="w-full  border-b border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full  border-b border-gray-300 "
             >
               <option>--Select Nature of transaction--</option>
               {/* Add your options here */}
