@@ -211,7 +211,7 @@ function ComplaintForm() {
 
         <div className="flex gap-6">
           <div className="w-full md:w-1/2">
-            <label className="block mt-[-19] text-sm tracking-wider
+            <label className="block mt-[-15] text-sm tracking-wider
   font- text-[#27357E]">Rupees</label>
             <input
               type="number"
