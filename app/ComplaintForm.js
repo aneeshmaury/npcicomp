@@ -44,7 +44,7 @@ function ComplaintForm() {
       />
      </div>
      <div className='tracking-wider text-md'>
-      Dispute Redressal Mechanis
+      Dispute Redressal Mechanis | NPCI - National Payment Corporation 
      </div>
       <div>
       <GrRefresh />
