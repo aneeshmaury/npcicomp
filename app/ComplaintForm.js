@@ -30,11 +30,16 @@ function ComplaintForm() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-4xl mx-auto p-3 bg-white shadow-lg rounded-lg">
       <h2 className="text-2xl font-semibold text-gray-800 mb-6">Complaint</h2>
 
+<div className=' px-3 shadow-lg rounded-sm bg-white' style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+
+
+
+
       <div className="flex justify-between items-center">
-        <h3 className="text-xl font-medium text-gray-700">Transaction</h3>
+        <h3 className="text-md font- text-gray-700">Transaction</h3>
         <div className="cursor-pointer ">
         <FaMinus />
         </div>
@@ -173,6 +178,8 @@ function ComplaintForm() {
           </button>
         </div>
       </form>
+</div>
+
     </div>
   );
 }
