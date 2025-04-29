@@ -142,7 +142,7 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full md:w-1/2">
-            <label className="block mt-[-19] text-sm tracking-wider
+            <label className="block mt-[-15] text-sm tracking-wider
   font- text-[#27357E]">Issue</label>
             <div
               name="issueType"
@@ -160,7 +160,7 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block mt-[-19] text-sm tracking-wider
+          <label className="block mt-[-15] text-sm tracking-wider
   text-[#27357E]">Comments</label>
           <textarea
             name="comments"
@@ -175,7 +175,7 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block mt-[-19] text-sm tracking-wider
+          <label className="block mt-[-15] text-sm tracking-wider
   font-  text-[#27357E] ">Transaction ID</label>
           <input
             type="text"
@@ -190,7 +190,7 @@ function ComplaintForm() {
 
 
         <div className="w-full">
-          <label className="block mt-[-19] text-sm tracking-wider
+          <label className="block mt-[-15] text-sm tracking-wider
   font- text-[#27357E]">Bank Name</label>
           <select
             name="bankName"
@@ -224,7 +224,7 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full md:w-1/2">
-            <label className="block mt-[-19] text-sm tracking-wider
+            <label className="block mt-[-15] text-sm tracking-wider
   font- text-[#27357E]">Paisa</label>
             <input
               type="number"
@@ -238,7 +238,7 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block mt-[-19] text-sm tracking-wider
+          <label className="block mt-[-15] text-sm tracking-wider
   font- text-[#27357E]">Date of Transaction</label>
           <input
             type="date"
@@ -251,7 +251,7 @@ function ComplaintForm() {
         </div>
 
         <div className="w-full">
-          <label className="block mt-[-19] text-sm tracking-wider
+          <label className="block mt-[-15] text-sm tracking-wider
   font- text-[#27357E] ">Email ID</label>
           <input
             type="email"
