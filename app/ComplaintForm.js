@@ -43,7 +43,7 @@ function ComplaintForm() {
         className="h-4 object-contain "
       />
      </div>
-     <div>
+     <div className='tracking-wider text-md'>
       Dispute Redressal Mechanis
      </div>
       <div>
@@ -139,12 +139,12 @@ function ComplaintForm() {
 
           <div className="w-full md:w-1/2">
             <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900">Issue</label>
+  font- text-[#27357E]">Issue</label>
             <div
               name="issueType"
               value={formData.issueType}
               onChange={handleChange}
-              className="w-full  border-b border-blue-500 "
+              className="w-full  border-b border-gray-300 "
             >
                <div className=' flex justify-between items-center'>
                <div className='text-md'>Fraudulent transaction</div>
@@ -157,7 +157,7 @@ function ComplaintForm() {
 
         <div className="w-full">
           <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900">Comments</label>
+  text-[#27357E]">Comments</label>
           <textarea
             name="comments"
             rows="1"
@@ -172,7 +172,7 @@ function ComplaintForm() {
 
         <div className="w-full">
           <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900 ">Transaction ID</label>
+  font-  text-[#27357E] ">Transaction ID</label>
           <input
             type="text"
             name="transactionId"
@@ -187,7 +187,7 @@ function ComplaintForm() {
 
         <div className="w-full">
           <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900">Bank Name</label>
+  font- text-[#27357E]">Bank Name</label>
           <select
             name="bankName"
             required
@@ -208,7 +208,7 @@ function ComplaintForm() {
         <div className="flex gap-6">
           <div className="w-full md:w-1/2">
             <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900">Rupees</label>
+  font- text-[#27357E]">Rupees</label>
             <input
               type="number"
               name="rupees"
@@ -221,7 +221,7 @@ function ComplaintForm() {
 
           <div className="w-full md:w-1/2">
             <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900">Paisa</label>
+  font- text-[#27357E]">Paisa</label>
             <input
               type="number"
               name="paisa"
@@ -235,7 +235,7 @@ function ComplaintForm() {
 
         <div className="w-full">
           <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900">Date of Transaction</label>
+  font- text-[#27357E]">Date of Transaction</label>
           <input
             type="date"
             name="transactionDate"
@@ -248,14 +248,14 @@ function ComplaintForm() {
 
         <div className="w-full">
           <label className="block mt-[-19] text-sm tracking-wider
-  font- text-purple-900 ">Email ID</label>
+  font- text-[#27357E] ">Email ID</label>
           <input
             type="email"
             name="email"
             placeholder="Please enter your mail ID"
             value={formData.email}
             onChange={handleChange}
-            className="w-full border-b border-gray-300 rounded-md "
+            className="w-full border-b border-gray-300  "
           />
         </div>
 
