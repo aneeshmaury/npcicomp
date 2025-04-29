@@ -5,7 +5,7 @@ import { FaMinus } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { FaSearch } from "react-icons/fa";
-
+import { GrRefresh } from "react-icons/gr";
 
 function ComplaintForm() {
   const [formData, setFormData] = useState({
@@ -35,6 +35,23 @@ function ComplaintForm() {
 
   return (
      <div>
+      <div className='px-4 py-3 flex justify-between items-center'>
+     <div>
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/2438/2438078.png"
+        alt="NCL Logo"
+        className="h-4 object-contain "
+      />
+     </div>
+     <div>
+      Dispute Redressal Mechanis
+     </div>
+      <div>
+      <GrRefresh />
+      </div>
+        
+
+      </div>
 <div className="w-full bg-[#1e1e1e] text-white text-xs px-4 py-1 flex gap-3 justify-end items-center">
   <span>Skip to main content</span>
   <div className="space-x-2">
@@ -104,7 +121,7 @@ function ComplaintForm() {
         <div className="flex flex-wrap gap-6">
           <div className="w-full md:w-1/2">
             <label className="block text-sm tracking-wider
-  font- text-purple-900 ">Nature of transaction</label>
+  font- text-[#27357E] ">Nature of transaction</label>
             <div
               name="natureOfTransaction"
               value={formData.natureOfTransaction}
