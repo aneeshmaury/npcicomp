@@ -107,14 +107,14 @@ function ComplaintForm() {
       {/* Scrollable Notice (NOT fixed) */}
       <div className="bg-white tracking-wider   px-7 py-2 mt-[96px]">
         <ul className="list-disc text-[14px] text-[#313131]">
-        <li className='leading-4 mb-[15px]'>
+        <li className='leading-4 mb-[15px] font-normal'>
         A complaint shall be first raised with the relevant TPAP in respect to all UPI related grievances / complaints of the end-user customers on-boarded by the PSP Bank / TPAP (if the UPI transaction is made through TPAP app). In case the complaint / grievance remains unresolved, the next level for escalation will be the PSP Bank, followed by the bank (where the end-user customer maintains its account) and NPCI, in the same order. After exercising these options, the end-user customer can approach the Banking Ombudsman and / or the Ombudsman for Digital Complaints, as the case may be.
           </li>
          
-          <li className='leading-4 mb-[15px]'>
+          <li className='leading-4 mb-[15px] font-normal'>
           The complaint can be raised for both the types of transactions i.e. fund transfer and merchant transactions
           </li>
-          <li className='leading-4 mb-[15px]'>
+          <li className='leading-4 mb-[15px] font-normal '>
             The end-user customer shall be kept communicated by the PSP / TPAP by
             means of updating the status of such end-user customer’s complaint on
             the relevant app itself
@@ -123,13 +123,13 @@ function ComplaintForm() {
       </div>
 
       {/* Main Form */}
-      <h2 className="text-2xl font-semibold text-gray-800 px-2 mb-6 mt-4">Complaint</h2>
+      <h5 className="text-[22px] font-bold text-[#313131] px-2 mb-6 mt-4">Complaint</h5>
 
       <div className="px-3 mx-2 shadow-lg rounded-sm bg-white" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
         {/* Section Header */}
         <div className="flex justify-between items-center">
-          <h3 className="text-md mt-2 text-gray-700">Transaction</h3>
-          <div className="cursor-pointer">
+          <h3 className="text-md mt-2 text-[#313131]">Transaction</h3>
+          <div className="cursor-pointer text-[#27357E]">
             <FaMinus />
           </div>
         </div>
@@ -141,11 +141,11 @@ function ComplaintForm() {
               <label className="block text-sm tracking-wider text-[#27357E]">Nature of transaction</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
-                  <div className="text-md">Person to Person</div>
+                  <div className="text-md font-medium text-[#000000]">Person to Person</div>
                   <div className="text-xl"><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>
-              <small className="text-xs italic text-gray-500">
+              <small className="text-xs italic text-[#313131]">
                 Please select the Nature of Transaction from drop down list
               </small>
             </div>
@@ -158,7 +158,7 @@ function ComplaintForm() {
                   <div className="text-xl"><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>
-              <small className="text-xs italic text-gray-500">
+              <small className="text-xs italic text-[#313131]">
                 Please select the issue from drop down list
               </small>
             </div>
@@ -189,7 +189,7 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
-            <small className="text-xs italic text-gray-500">
+            <small className="text-xs italic text-[#313131]">
               Enter your 12-digit transaction reference number. E.g. 500112345678
             </small>
           </div>
@@ -210,7 +210,7 @@ function ComplaintForm() {
               </select>
               <MdOutlineKeyboardArrowDown className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-700 text-xl pointer-events-none" />
             </div>
-            <small className="text-xs italic text-gray-500">Select your bank from the dropdown</small>
+            <small className="text-xs italic text-[#313131]">Select your bank from the dropdown</small>
           </div>
 
           <div className="flex flex-col gap-1">
@@ -237,7 +237,7 @@ function ComplaintForm() {
                 />
               </div>
             </div>
-            <p className="text-sm italic text-gray-600">
+            <p className="text-sm italic text-[#313131]">
               Capture rupee & paise separately
             </p>
           </div>
@@ -251,7 +251,7 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
-            <small className="text-xs italic text-gray-500">Use the calendar to select the date</small>
+            <small className="text-xs italic text-[#313131]">Use the calendar to select the date</small>
           </div>
 
           <div className="w-full">
@@ -263,7 +263,7 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
-            <small className="text-xs italic text-gray-500">Enter your email ID</small>
+            <small className="text-xs italic text-[#313131]">Enter your email ID</small>
           </div>
 
           <div className="text-center mt-9 pb-5">
