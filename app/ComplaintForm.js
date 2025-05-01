@@ -80,7 +80,7 @@ function ComplaintForm() {
             <button className="hover:underline text-md">A</button>
           </div>
         </div>
-        <div className="bg-[#707070] opacity-75 py-4 px-6 relative">
+        <div className="bg-[#00000080] opacity py-4 px-6 relative">
           <div className="flex justify-between items-center gap-4 relative z-10">
             <div className="text-3xl text-white">
               <BiMenuAltLeft />
@@ -89,12 +89,12 @@ function ComplaintForm() {
               <img
                 src="https://www.npci.org.in/images/npci/new-logo1.png"
                 alt="NCL Logo"
-                className="h-8 object-contain"
+                className="h-9 object-contain"
               />
               <img
                 src="https://www.npci.org.in/images/npci/har-payment-digital-logo.png"
                 alt="Har Payment Logo"
-                className="h-8 object-contain"
+                className="h-9 object-contain"
               />
             </div>
             <div className="text-white text-xl">
@@ -105,9 +105,16 @@ function ComplaintForm() {
       </div>
 
       {/* Scrollable Notice (NOT fixed) */}
-      <div className="bg-white px-6 py-2 mt-[96px]">
-        <ul className="list-disc text-sm text-black">
-          <li>
+      <div className="bg-white tracking-wider   px-7 py-2 mt-[96px]">
+        <ul className="list-disc text-[14px] text-[#313131]">
+        <li className='leading-4 mb-[15px]'>
+        A complaint shall be first raised with the relevant TPAP in respect to all UPI related grievances / complaints of the end-user customers on-boarded by the PSP Bank / TPAP (if the UPI transaction is made through TPAP app). In case the complaint / grievance remains unresolved, the next level for escalation will be the PSP Bank, followed by the bank (where the end-user customer maintains its account) and NPCI, in the same order. After exercising these options, the end-user customer can approach the Banking Ombudsman and / or the Ombudsman for Digital Complaints, as the case may be.
+          </li>
+         
+          <li className='leading-4 mb-[15px]'>
+          The complaint can be raised for both the types of transactions i.e. fund transfer and merchant transactions
+          </li>
+          <li className='leading-4 mb-[15px]'>
             The end-user customer shall be kept communicated by the PSP / TPAP by
             means of updating the status of such end-user customer’s complaint on
             the relevant app itself
@@ -116,7 +123,7 @@ function ComplaintForm() {
       </div>
 
       {/* Main Form */}
-      <h2 className="text-2xl font-semibold text-gray-800 px-2 mb-6 mt-6">Complaint</h2>
+      <h2 className="text-2xl font-semibold text-gray-800 px-2 mb-6 mt-4">Complaint</h2>
 
       <div className="px-3 mx-2 shadow-lg rounded-sm bg-white" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
         {/* Section Header */}
@@ -162,13 +169,13 @@ function ComplaintForm() {
             <label className="block text-sm tracking-wider text-[#27357E]">Comments</label>
             <textarea
               name="comments"
-              rows="2"
+              rows="3"
               maxLength="500"
               value={formData.comments}
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
-            <small className="text-xs italic text-gray-500">
+            <small className="text-xs italic text-[#313131]">
               Provide brief about your issue. Not greater than 500 characters
             </small>
           </div>
