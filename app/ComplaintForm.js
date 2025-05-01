@@ -6,6 +6,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { FaSearch } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import { FaPlus } from "react-icons/fa";
 
 function ComplaintForm() {
   const [formData, setFormData] = useState({
@@ -127,7 +128,7 @@ function ComplaintForm() {
                   <div className='text-xl'><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>
-              <small className="text-xs italic text-gray-500">Please select the Nature of Transaction</small>
+              <small className="text-xs italic text-gray-500">Please select the Nature of Transaction from drop down list</small>
             </div>
 
             <div className="w-full md:w-1/2">
@@ -138,7 +139,7 @@ function ComplaintForm() {
                   <div className='text-xl'><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>
-              <small className="text-xs italic text-gray-500">Please select the issue</small>
+              <small className="text-xs italic text-gray-500">Please select the issue from drop down list</small>
             </div>
           </div>
 
@@ -153,7 +154,7 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             ></textarea>
-            <small className="text-xs italic text-gray-500">Not greater than 500 characters</small>
+            <small className="text-xs italic text-gray-500">Provide brief about your issue. Not greater than 500 characters</small>
           </div>
 
           <div className="w-full">
@@ -165,7 +166,7 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
-            <small className="text-xs italic text-gray-500">E.g. 500112345678</small>
+            <small className="text-xs italic text-gray-500">Please enter your 12-digit transaction reference number. E.g. 500112345678</small>
           </div>
 
           <div className="w-full">
@@ -191,32 +192,38 @@ function ComplaintForm() {
     />
   </div>
 
-  <small className="text-xs italic text-gray-500">Please select your bank</small>
+  <small className="text-xs italic text-gray-500">Please select your bank from drop down list</small>
+</div>
+<div className="flex flex-col gap-1">
+  <div className="flex gap-6">
+    <div className="w-full md:w-1/2">
+      <label className="block text-sm tracking-wider text-[#27357E]">Rupees</label>
+      <input
+        type="number"
+        name="rupees"
+        value={formData.rupees}
+        onChange={handleChange}
+        className="w-full border-b border-gray-300"
+      />
+    </div>
+
+    <div className="w-full md:w-1/2">
+      <label className="block text-sm tracking-wider text-[#27357E]">Paisa</label>
+      <input
+        type="number"
+        name="paisa"
+        value={formData.paisa}
+        onChange={handleChange}
+        className="w-full border-b border-gray-300"
+      />
+    </div>
+  </div>
+
+  <p className="text-sm italic text-gray-600">
+    Please capture rupee & paise separately in the box provided
+  </p>
 </div>
 
-          <div className="flex gap-6">
-            <div className="w-full md:w-1/2">
-              <label className="block text-sm tracking-wider text-[#27357E]">Rupees</label>
-              <input
-                type="number"
-                name="rupees"
-                value={formData.rupees}
-                onChange={handleChange}
-                className="w-full border-b border-gray-300"
-              />
-            </div>
-
-            <div className="w-full md:w-1/2">
-              <label className="block text-sm tracking-wider text-[#27357E]">Paisa</label>
-              <input
-                type="number"
-                name="paisa"
-                value={formData.paisa}
-                onChange={handleChange}
-                className="w-full border-b border-gray-300"
-              />
-            </div>
-          </div>
 
           <div className="w-full">
             <label className="block text-sm tracking-wider text-[#27357E]">Date of Transaction</label>
@@ -227,6 +234,7 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
+            <small className="text-xs italic text-gray-500">Please use the calendar to select the date</small>
           </div>
 
           <div className="w-full">
@@ -238,18 +246,27 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
+            <small className="text-xs italic text-gray-500">Please enter your mail ID</small>
           </div>
 
-          <div className="text-center mt-6">
+          <div className="text-center mt-9 mb-[-9]  pb-5">
             <button
               type="submit"
-              className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+              className="px-9 py-1 bg-[#27357E] text-white  hover:bg-blue-700"
             >
               Submit
             </button>
           </div>
         </form>
+<div className='text-sm mb-9 pb-4'>
+<span className='font-bold'>Note:</span> Please ensure contact details provided are correct before submitting
+</div>
+
       </div>
+      <div className="bg-white shadow-md px-3 py-3 mx-2 mb-2 flex justify-between items-center rounded-sm " style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+  <span className="text-black text-md ">Non-Transaction</span>
+  <FaPlus className="text-[#27357E] cursor-pointer" />
+</div>
     </div>
   );
 }
