@@ -263,7 +263,7 @@ function ComplaintForm() {
 </div>
 
       </div>
-      <div className="bg-white shadow-md px-3 py-3 mx-2 mb-2 flex justify-between items-center rounded-sm " style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+      <div className="bg-white shadow-md px-3 py-3 mx-2 mb-2 mt-[-19] flex justify-between items-center rounded-sm " style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
   <span className="text-black text-md ">Non-Transaction</span>
   <FaPlus className="text-[#27357E] cursor-pointer" />
 </div>
