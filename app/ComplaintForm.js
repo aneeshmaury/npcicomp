@@ -138,10 +138,10 @@ function ComplaintForm() {
           {/* Form fields */}
           <div className="flex flex-wrap gap-6">
             <div className="w-full md:w-1/2">
-              <label className="block text-xs tracking-wide text-[#27357E]">Nature of transaction</label>
+              <label className="block text-sm tracking-wide text-[#27357E]">Nature of transaction</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
-                  <div className="text-md font-sm text-[#000000]">Person to Person</div>
+                  <div className="text-md text-[#000000]">Person to Person</div>
                   <div className="text-xl"><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>
@@ -151,10 +151,10 @@ function ComplaintForm() {
             </div>
 
             <div className="w-full md:w-1/2">
-              <label className="block text-sm tracking-wider text-[#27357E]">Issue</label>
+              <label className="block text-sm tracking-wide text-[#27357E]">Issue</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
-                  <div className="text-md">Fraudulent transaction</div>
+                  <div className="text-md ">Fraudulent transaction</div>
                   <div className="text-xl"><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>
@@ -166,7 +166,7 @@ function ComplaintForm() {
 
           {/* Other Fields */}
           <div className="w-full">
-            <label className="block text-sm tracking-wider text-[#27357E]">Comments</label>
+            <label className="block text-sm tracking-wide text-[#27357E]">Comments</label>
             <textarea
               name="comments"
               rows="3"
