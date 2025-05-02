@@ -105,7 +105,7 @@ function ComplaintForm() {
       </div>
 
       {/* Scrollable Notice (NOT fixed) */}
-      <div className="bg-white tracking-wider   px-7 py-2 mt-[96px]">
+      <div className="bg-white text-md text-[#000000]   px-8 py-2 mt-[96px]">
         <ul className="list-disc text-[14px] text-[#313131]">
         <li className='leading-4 mb-[15px] font-normal'>
         A complaint shall be first raised with the relevant TPAP in respect to all UPI related grievances / complaints of the end-user customers on-boarded by the PSP Bank / TPAP (if the UPI transaction is made through TPAP app). In case the complaint / grievance remains unresolved, the next level for escalation will be the PSP Bank, followed by the bank (where the end-user customer maintains its account) and NPCI, in the same order. After exercising these options, the end-user customer can approach the Banking Ombudsman and / or the Ombudsman for Digital Complaints, as the case may be.
@@ -154,7 +154,7 @@ function ComplaintForm() {
               <label className="block text-sm tracking-wide text-[#27357E]">Issue</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
-                  <div className="text-md ">Fraudulent transaction</div>
+                  <div className="text-md text-[#000000]">Fraudulent transaction</div>
                   <div className="text-xl"><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>
@@ -165,7 +165,7 @@ function ComplaintForm() {
           </div>
 
           {/* Other Fields */}
-          <div className="w-full">
+          <div className="w-full ">
             <label className="block text-sm tracking-wide text-[#27357E]">Comments</label>
             <textarea
               name="comments"
@@ -181,7 +181,7 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full">
-            <label className="block text-sm tracking-wider text-[#27357E]">Transaction ID</label>
+            <label className="block text-sm tracking-wide text-[#27357E]">Transaction ID</label>
             <input
               type="text"
               name="transactionId"
@@ -195,7 +195,7 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full">
-            <label className="block text-sm tracking-wider text-[#27357E]">Bank Name</label>
+            <label className="block text-sm tracking-wide text-[#27357E]">Bank Name</label>
             <div className="relative">
               <select
                 name="bankName"
@@ -479,7 +479,7 @@ function ComplaintForm() {
           <div className="flex flex-col gap-1">
             <div className="flex gap-6">
               <div className="w-full md:w-1/2">
-                <label className="block text-sm tracking-wider text-[#27357E]">Rupees</label>
+                <label className="block text-sm tracking-wide text-[#27357E]">Rupees</label>
                 <input
                   type="number"
                   name="rupees"
@@ -490,7 +490,7 @@ function ComplaintForm() {
               </div>
 
               <div className="w-full md:w-1/2">
-                <label className="block text-sm tracking-wider text-[#27357E]">Paisa</label>
+                <label className="block text-sm tracking-wide text-[#27357E]">Paisa</label>
                 <input
                   type="number"
                   name="paisa"
@@ -506,7 +506,7 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full">
-            <label className="block text-sm tracking-wider text-[#27357E]">Date of Transaction</label>
+            <label className="block text-sm tracking-wide text-[#27357E]">Date of Transaction</label>
             <input
               type="date"
               name="transactionDate"
@@ -518,7 +518,7 @@ function ComplaintForm() {
           </div>
 
           <div className="w-full">
-            <label className="block text-sm tracking-wider text-[#27357E]">Email ID</label>
+            <label className="block text-sm tracking-wide text-[#27357E]">Email ID</label>
             <input
               type="email"
               name="email"
