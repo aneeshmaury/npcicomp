@@ -138,7 +138,7 @@ function ComplaintForm() {
           {/* Form fields */}
           <div className="flex flex-wrap gap-6">
             <div className="w-full md:w-1/2">
-              <label className="block font-thin tracking-wider text-[#27357E]">Nature of transaction</label>
+              <label className="block text-xs tracking-wide text-[#27357E]">Nature of transaction</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
                   <div className="text-md font-sm text-[#000000]">Person to Person</div>
