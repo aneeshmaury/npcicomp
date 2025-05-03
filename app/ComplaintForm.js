@@ -97,8 +97,8 @@ function ComplaintForm() {
                 className="h-9 object-contain"
               />
             </div>
-            <div className="text-white text-xl">
-              <FaSearch />
+            <div className="text-white ">
+              <img className='h-5' src='https://www.npci.org.in/images/npci/search.png'/>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ function ComplaintForm() {
       {/* Scrollable Notice (NOT fixed) */}
       <div className="bg-white text-md text-[#000000]   px-8 py-2 mt-[96px]">
         <ul className="list-disc text-[14px] text-[#313131]">
-        <li className='leading-4 mb-[15px] font-normal'>
+        <li className='leading-4 mb-[15px] font-normal poppins'>
         A complaint shall be first raised with the relevant TPAP in respect to all UPI related grievances / complaints of the end-user customers on-boarded by the PSP Bank / TPAP (if the UPI transaction is made through TPAP app). In case the complaint / grievance remains unresolved, the next level for escalation will be the PSP Bank, followed by the bank (where the end-user customer maintains its account) and NPCI, in the same order. After exercising these options, the end-user customer can approach the Banking Ombudsman and / or the Ombudsman for Digital Complaints, as the case may be.
           </li>
          
@@ -138,7 +138,7 @@ function ComplaintForm() {
           {/* Form fields */}
           <div className="flex flex-wrap gap-6">
             <div className="w-full md:w-1/2">
-              <label className="block text-sm tracking-wide text-[#27357E]">Nature of transaction</label>
+              <label className="block text-sm font-thin tracking-wide text-[#27357E]">Nature of transaction</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
                   <div className="text-md text-[#000000]">Person to Person</div>
@@ -500,10 +500,13 @@ function ComplaintForm() {
                 />
               </div>
             </div>
-            <p className="text-sm italic text-[#313131]">
-              Capture rupee & paise separately
+            <p className="text-xs italic text-[#313131]">
+            Please capture rupee & paise separately in the box provided
             </p>
           </div>
+          <div className="font-[400] text-[18.004px] leading-[27px] tracking-normal text-[#000000] font-[Montserrat,sans-serif]">
+  Your text here
+</div>
 
           <div className="w-full">
             <label className="block text-sm tracking-wide text-[#27357E]">Date of Transaction</label>
@@ -539,12 +542,12 @@ function ComplaintForm() {
           </div>
         </form>
 
-        <div className="text-sm mb-9 pb-4">
+        <div className="text-sm mb-5 pb-4">
           <span className="font-bold">Note:</span> Ensure contact details provided are correct before submitting
         </div>
       </div>
 
-      <div className="bg-white shadow-md px-3 py-3 mx-2 my-3 flex justify-between items-center rounded-sm" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+      <div className="bg-white shadow-md px-3 py-3 mx-2  flex justify-between items-center rounded-sm" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
         <span className="text-black text-md">Non-Transaction</span>
         <FaPlus className="text-[#27357E] cursor-pointer" />
       </div>
