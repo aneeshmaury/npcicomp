@@ -138,7 +138,7 @@ function ComplaintForm() {
           {/* Form fields */}
           <div className="flex flex-wrap gap-6">
             <div className="w-full md:w-1/2">
-              <label className="block text-sm font-thin tracking-wide text-[#27357E]">Nature of transaction</label>
+              <label className="block text-sm font-[400] tracking-wide text-[#27357E]">Nature of transaction</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
                   <div className="text-md text-[#000000]">Person to Person</div>
@@ -473,7 +473,7 @@ function ComplaintForm() {
               </select>
               <MdOutlineKeyboardArrowDown className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-700 text-xl pointer-events-none" />
             </div>
-            <small className="text-xs italic text-[#313131]">Select your bank from the dropdown</small>
+            <small className="text-xs italic text-[#313131]">Please select your bank from drop down list</small>
           </div>
 
           <div className="flex flex-col gap-1">
@@ -504,9 +504,7 @@ function ComplaintForm() {
             Please capture rupee & paise separately in the box provided
             </p>
           </div>
-          <div className="font-[400] text-[18.004px] leading-[27px] tracking-normal text-[#000000] font-[Montserrat,sans-serif]">
-  Your text here
-</div>
+        
 
           <div className="w-full">
             <label className="block text-sm tracking-wide text-[#27357E]">Date of Transaction</label>
@@ -517,7 +515,7 @@ function ComplaintForm() {
               onChange={handleChange}
               className="w-full border-b border-gray-300"
             />
-            <small className="text-xs italic text-[#313131]">Use the calendar to select the date</small>
+            <small className="text-xs italic text-[#313131]">Please use the calendar to select the date</small>
           </div>
 
           <div className="w-full">
@@ -542,13 +540,13 @@ function ComplaintForm() {
           </div>
         </form>
 
-        <div className="text-sm mb-5 pb-4">
+        <div className="text-sm mb-5 pb-4 tracking-wide font-[Montserrat,sans-serif]">
           <span className="font-bold">Note:</span> Ensure contact details provided are correct before submitting
         </div>
       </div>
 
       <div className="bg-white shadow-md px-3 py-3 mx-2  flex justify-between items-center rounded-sm" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-        <span className="text-black text-md">Non-Transaction</span>
+        <span className="text-black tracking-wide  text-md">Non-Transaction</span>
         <FaPlus className="text-[#27357E] cursor-pointer" />
       </div>
     </div>
