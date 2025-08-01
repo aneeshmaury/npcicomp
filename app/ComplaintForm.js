@@ -131,7 +131,7 @@ function ComplaintForm() {
       <div className="px-3 mx-2 shadow-lg rounded-sm bg-white" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
         {/* Section Header */}
         <div className="flex justify-between items-center">
-          <h3 className="text-md mt-2 text-[#313131]">Transacti</h3>
+          <h3 className="text-md mt-2 text-[#313131]">Transaction</h3>
           <div className="cursor-pointer text-[#27357E]">
             <FaMinus />
           </div>
