@@ -4,7 +4,7 @@ import SubmitForm from './SubmitForm.js';
 
 function App() {
   return (
-    <div>
+    <div className='custom-font'>
       <ComplaintForm />
       
     </div>

@@ -5,6 +5,9 @@ import { FaMinus, FaPlus, FaSearch } from 'react-icons/fa';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { BiMenuAltLeft } from 'react-icons/bi';
 import { ImCross } from 'react-icons/im';
+import './globals.css';
+
+
 
 function ComplaintForm() {
   const [formData, setFormData] = useState({
@@ -138,10 +141,10 @@ function ComplaintForm() {
           {/* Form fields */}
           <div className="flex flex-wrap gap-6">
             <div className="w-full md:w-1/2">
-              <label className="block text-sm font-[400] tracking-wide text-[#27357E]">Nature of transaction</label>
+              <label className="block text-sm font-[400] tracking-wide text-[#27357E] custom-font">Nature of transaction</label>
               <div className="w-full border-b border-gray-300">
                 <div className="flex justify-between items-center">
-                  <div className="text-md text-[#000000]">Person to Person</div>
+                  <div className="text-md text-[#000000] custom-font">Person to Person</div>
                   <div className="text-xl"><MdOutlineKeyboardArrowDown /></div>
                 </div>
               </div>

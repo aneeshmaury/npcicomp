@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+.custom-font {
+  font-family: 'montserrat ', sans-serif;
+}
