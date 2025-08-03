@@ -22,7 +22,7 @@ export default function NPCIUI() {
 
       {/* Popup */}
       {showPopup && (
-        <div className="fixed pt-3 pb-[500px] inset-x-0 top-11 flex justify-center z-50 bg-black/20">
+        <div className="fixed pt-3 pb-[500px] inset-x-0 top-0 flex justify-center z-50 bg-black/20">
          
           <div className="relative bg-white shadow-lg rounded-md p-4 w-[360px] max-w-md text-[15px] leading-relaxed">
             {/* Close button */}
