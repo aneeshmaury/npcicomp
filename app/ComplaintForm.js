@@ -17,12 +17,15 @@ export default function NPCIUI() {
   const [showPopup, setShowPopup] = useState(true);
 
   return (
-    <div className="font-montserrat tracking-wide bg-white min-h-screen">
+    <div className='bg-black-500'>
+
+    
+    <div className=" font-montserrat tracking-wide bg-white min-h-screen">
      
 
       {/* Popup */}
       {showPopup && (
-        <div className="fixed pt-3 pb-[500px] inset-x-0 top-0 flex justify-center z-50 bg-black/20">
+        <div className="fixed pt-3 pb-[500px] inset-x-0 top- flex justify-center z-50 bg-black/20">
          
           <div className="relative bg-white shadow-lg rounded-md p-4 w-[360px] max-w-md text-[15px] leading-relaxed">
             {/* Close button */}
@@ -107,6 +110,7 @@ export default function NPCIUI() {
           © 2025 NPCI. All rights reserved
         </div>
       </footer>
+    </div>
     </div>
   );
 }
