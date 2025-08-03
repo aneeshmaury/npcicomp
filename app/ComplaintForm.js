@@ -16,12 +16,12 @@ export default function NPCIUI() {
   const [showPopup, setShowPopup] = useState(true);
 
   return (
-    <div className="font-sans bg-white min-h-screen">
+    <div className="font-montserrat tracking-wide bg-white min-h-screen">
       
 
       {/* Popup */}
       {showPopup && (
-        <div className="fixed pt-1 pb-[500px] inset-x-0 top-0 flex justify-center z-50 bg-black/20">
+        <div className="fixed pt-3 pb-[500px] inset-x-0 top-0 flex justify-center z-50 bg-black/20">
           <div className="relative bg-white shadow-lg rounded-md p-4 w-[360px] max-w-md text-[15px] leading-relaxed">
             {/* Close button */}
             <button
@@ -64,14 +64,14 @@ export default function NPCIUI() {
         </div>
 
         {/* Non-Transaction Section */}
-        <div className="bg-white shadow-md px-3 py-2 w-[340px] flex justify-between  rounded-sm" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
+        <div className="bg-white shadow-md px-3 py-2 w-[350px] flex justify-between  rounded-sm" style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
         <span className="text-black tracking-wide  text-md">Non-Transaction</span>
         <FaPlus className="text-[#27357E] cursor-pointer" />
       </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-50  border-gray-300 mt-4 pb-44 p-5 text-sm text-gray-500 font-[Montserrat,sans-serif]">
+      <footer className="bg-gray-50   border-gray-300 mt-3 pb-11 p-5 text-sm text-gray-500 font-[Montserrat,sans-serif]">
         <div className="flex flex-wrap justify-between">
           <div>
             <p className='mt-2'>Disclaimer</p>
@@ -84,19 +84,23 @@ export default function NPCIUI() {
             <p className='mt-2'>Work With Us</p>
             <p className='mt-2'>Events And Awards</p>
             <p className='mt-2' >Blog</p>
-          </div>
           <div>
-            <p className="font-bold text-gray-400 className='mt-2'">FOLLOW US</p>
-            <div className="flex text-[25px] text-gray-400 gap-3 flex-wrap mt-1">
+            <p className="font-semibold mt-4 text-gray-400 mt-2">FOLLOW US</p>
+            <div className="flex text-[20px] w-[100px] text-gray-400 gap-3 flex-wrap mt-1">
               <FaTwitter />
               <FaFacebookF />
-              <FaLinkedinIn />
+              <FaLinkedinIn  /> 
+              
               <FaInstagram />
               <FaYoutube />
+              
+            
             </div>
           </div>
+          </div>
+         
         </div>
-        <div className="mt-19 text-xs ">
+        <div className="mt-11 text-xs ">
           Corporate Identity Number (CIN): U74990MH2008NPL189067 <br />
           © 2025 NPCI. All rights reserved
         </div>
