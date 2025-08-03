@@ -18,7 +18,7 @@ export default function NPCIUI() {
 
   return (
     <div className="font-montserrat tracking-wide bg-white min-h-screen">
-       <div className='text-black bg-black'>..</div>
+     
 
       {/* Popup */}
       {showPopup && (
