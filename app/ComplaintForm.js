@@ -17,11 +17,12 @@ export default function NPCIUI() {
 
   return (
     <div className="font-montserrat tracking-wide bg-white min-h-screen">
-      
+       <div className='text-black bg-black'>..</div>
 
       {/* Popup */}
       {showPopup && (
         <div className="fixed pt-3 pb-[500px] inset-x-0 top-11 flex justify-center z-50 bg-black/20">
+         
           <div className="relative bg-white shadow-lg rounded-md p-4 w-[360px] max-w-md text-[15px] leading-relaxed">
             {/* Close button */}
             <button
