@@ -27,7 +27,7 @@ export default function NPCIUI() {
 
         {/* Fixed Popup at the Top */}
         {showPopup && (
-          <div className="fixed inset-x-0 top-0 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[360px] max-w-md text-[15px] leading-relaxed">
+          <div className="fixed inset-x-0 top-1 left-2 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[360px] max-w-md text-[15px] leading-relaxed">
             {/* Close button */}
             <button
               onClick={() => setShowPopup(false)}
@@ -37,11 +37,10 @@ export default function NPCIUI() {
             </button>
 
             {/* Popup content */}
-            <p className="mb-2">
+            <p className=" font-thin tracking-wide ">
               We have lodged your complaint successfully.<br />
-              Please note your CURN (Complaint Unique Reference Number) is <strong>CN52094088995</strong>.
-            </p>
-            <p>
+              Please note your CURN (Complaint Unique Reference Number) is <span className='font-bold'>CN52094088995</span>.
+            <br/> <br/>
               Please be informed that transaction details provided by you are incorrect/not matching.
               We request to check the TXN details properly and raise the complaint again or try again
               after 24 hours.
@@ -101,7 +100,7 @@ export default function NPCIUI() {
             </div>
           </div>
           <div className="mt-11 text-xs">
-            Corporate Identity Number (CIN): U74990MH2008NPL189067 <br />
+            Corporate Identity Number rrr(CIN): U74990MH2008NPL189067 <br />
             © 2025 NPCI. All rights reserved
           </div>
         </footer>
