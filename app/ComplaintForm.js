@@ -27,7 +27,7 @@ export default function NPCIUI() {
 
         {/* Fixed Popup at the very Top and Centered horizontally */}
         {showPopup && (
-          <div className="fixed top-1/4 left-1/2 transform -translate-x-1/2 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[370px] text-[17px]">
+          <div className="fixed top-0 left-1/2 transform -translate-x-1/2 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[370px] text-[17px]">
             {/* Close button */}
             <button
               onClick={() => setShowPopup(false)}
@@ -54,7 +54,7 @@ export default function NPCIUI() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-gray-50 border-gray-300 mt-3 pb-11 p-5 text-sm text-gray-500 font-[Montserrat,sans-serif]">
+        <footer className="bg-gray-50 mt-[300px] border-gray-300 mt-3 pb-11 p-5 text-sm text-gray-500 font-[Montserrat,sans-serif]">
           <div className="flex flex-wrap justify-between">
             <div>
               <p className="mt-2">Disclaimer</p>
