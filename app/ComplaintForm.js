@@ -15,7 +15,7 @@ export default function NPCIUI() {
   const [showPopup, setShowPopup] = useState(true);
 
   return (
-    <div className="bg-black-500">
+    <div className="  font-Poppins bg-black-500">
       <div className=" tracking-wide bg-white min-h-screen">
         
         {/* Full Screen Background with darkened overlay */}
@@ -37,7 +37,7 @@ export default function NPCIUI() {
             </button>
 
             {/* Popup content */}
-            <p className=" font-thin tracking-wide text-black">
+            <p className="  tracking-wide text-black">
               We have lodged your complaint successfully.<br />
               Please note your CURN (Complaint Unique Reference Number) is <span className='font-bold'>CN52094088995</span>.
             <br/> <br/>
@@ -49,7 +49,7 @@ export default function NPCIUI() {
         )}
 
         {/* Main Content */}
-        <div className="p-5 text-center mt-20">
+        <div className="p-5 mt-20">
           <input
             type="email"
             placeholder="Please enter your Email ID"
