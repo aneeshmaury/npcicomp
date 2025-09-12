@@ -16,18 +16,18 @@ export default function NPCIUI() {
 
   return (
     <div className="bg-black-500">
-      <div className="font-montserrat tracking-wide bg-white min-h-screen">
+      <div className=" tracking-wide bg-white min-h-screen">
         
         {/* Full Screen Background with darkened overlay */}
         {showPopup && (
-          <div className="fixed inset-0 bg-black/30 z-40">
+          <div className="fixed inset-0 bg-black/30 ">
             {/* This ensures the background is darkened without blocking content */}
           </div>
         )}
 
         {/* Fixed Popup at the Top */}
         {showPopup && (
-          <div className="fixed inset-x-0 top-1 left-2 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[360px] max-w-md text-[15px] leading-relaxed">
+          <div className="fixed inset-x-0 top-1 left-3 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[370px]  text-[17px] ">
             {/* Close button */}
             <button
               onClick={() => setShowPopup(false)}
@@ -37,7 +37,7 @@ export default function NPCIUI() {
             </button>
 
             {/* Popup content */}
-            <p className=" font-thin tracking-wide ">
+            <p className=" font-thin tracking-wide text-black">
               We have lodged your complaint successfully.<br />
               Please note your CURN (Complaint Unique Reference Number) is <span className='font-bold'>CN52094088995</span>.
             <br/> <br/>
