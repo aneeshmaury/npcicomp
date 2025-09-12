@@ -15,19 +15,19 @@ export default function NPCIUI() {
   const [showPopup, setShowPopup] = useState(true);
 
   return (
-    <div className="  font-Poppins bg-black-500">
-      <div className=" tracking-wide bg-white min-h-screen">
+    <div className="font-Poppins bg-black-500">
+      <div className="tracking-wide bg-white min-h-screen">
         
         {/* Full Screen Background with darkened overlay */}
         {showPopup && (
-          <div className="fixed inset-0 bg-black/30 ">
+          <div className="fixed inset-0 bg-black/30 z-40">
             {/* This ensures the background is darkened without blocking content */}
           </div>
         )}
 
-        {/* Fixed Popup at the Top */}
+        {/* Fixed Popup at the very Top and Centered horizontally */}
         {showPopup && (
-          <div className="fixed inset-x-0 top-1 left-3 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[370px]  text-[17px] ">
+          <div className="fixed top-1/4 left-1/2 transform -translate-x-1/2 flex justify-center z-50 bg-white shadow-lg rounded-md p-4 w-[370px] text-[17px]">
             {/* Close button */}
             <button
               onClick={() => setShowPopup(false)}
@@ -37,10 +37,9 @@ export default function NPCIUI() {
             </button>
 
             {/* Popup content */}
-            <p className="  tracking-wide text-black">
+            <p className="tracking-wide text-black">
               We have lodged your complaint successfully.<br />
-              Please note your CURN (Complaint Unique Reference Number) is <span className='font-bold'>CN52094088995</span>.
-            <br/> <br/>
+              Please note your CURN (Complaint Unique Reference Number) is <span className='font-bold'>CN52094088995</span>.<br /><br />
               Please be informed that transaction details provided by you are incorrect/not matching.
               We request to check the TXN details properly and raise the complaint again or try again
               after 24 hours.
@@ -48,29 +47,10 @@ export default function NPCIUI() {
           </div>
         )}
 
-        {/* Main Content */}
-        <div className="p-5 mt-20">
-          <input
-            type="email"
-            placeholder="Please enter your Email ID"
-            className="w-full max-w-md p-2 border border-gray-300 rounded mb-4 text-sm"
-          />
-          <br />
-          <button className="bg-white text-[#1f2c61] border border-[#1f2c61] px-6 py-2 rounded text-sm font-medium mb-4 hover:bg-[#1f2c61] hover:text-white transition">
-            Submit
-          </button>
-          <div className="text-sm mb-3 pb-4 tracking-wide font-[Montserrat,sans-serif]">
-            <span className="font-bold">Note:</span> Please Ensure contact details provided are correct before submitting
-          </div>
-
-          {/* Non-Transaction Section */}
-          <div
-            className="bg-white shadow-md px-3 py-2 w-[350px] flex justify-between rounded-sm"
-            style={{ boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}
-          >
-            <span className="text-black tracking-wide text-md">Non-Transaction</span>
-            <FaPlus className="text-[#27357E] cursor-pointer" />
-          </div>
+        {/* Non-Transaction Section */}
+        <div className="fixed top-[calc(100%+10px)] left-1/2 transform -translate-x-1/2 w-[370px] bg-white shadow-md px-3 py-2 rounded-sm">
+          <span className="text-black tracking-wide text-md">Non-Transaction</span>
+          <FaPlus className="text-[#27357E] cursor-pointer" />
         </div>
 
         {/* Footer */}
@@ -100,7 +80,7 @@ export default function NPCIUI() {
             </div>
           </div>
           <div className="mt-11 text-xs">
-            Corporate Identity Number rrr(CIN): U74990MH2008NPL189067 <br />
+            Corporate Identity Number (CIN): U74990MH2008NPL189067 <br />
             © 2025 NPCI. All rights reserved
           </div>
         </footer>
